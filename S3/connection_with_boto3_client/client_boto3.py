@@ -14,7 +14,7 @@ class BucketAWS:
         self.client = boto3.client('s3')
         self.name_bucket = 'igti-bucket-datalake'
         self.dest_folder = 'data'
-        self.folder_to_upload_path = 'C:/dev/Data_Lake_com_AWS_S3/file_to_upload/teste.json'
+        self.folder_to_upload_path = '/S3/file_to_upload/teste.json'
 
     def buckets_name(self):
         for bucket in self.s3.buckets.all():
